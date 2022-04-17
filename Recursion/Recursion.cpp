@@ -1,16 +1,16 @@
-#include<iostream>
+ï»¿#include<iostream>
 using namespace std;
 
 void elevator(int floor)
 {
 	if (floor == 0)
 	{
-		cout << "Âû â ïîäâàëå" << endl;
+		cout << "Ð’Ñ‹ Ð² Ð¿Ð¾Ð´Ð²Ð°Ð»Ðµ" << endl;
 		return;
 	}
-	cout << "Âû íà " << floor << "ýòàæå\n ";
+	cout << "Ð’Ñ‹ Ð½Ð° " << floor << "ÑÑ‚Ð°Ð¶Ðµ\n ";
 	elevator(floor-1);
-	cout << "Âû íà " << floor << "ýòàæå\n ";
+	cout << "Ð’Ñ‹ Ð½Ð° " << floor << "ÑÑ‚Ð°Ð¶Ðµ\n ";
 }
 
 void main()
@@ -20,6 +20,6 @@ void main()
 	//main();
 
 	int n;
-	cout << "Ââåäèòå íîìåð ýòàæà: "; cin >> n;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ð¼ÐµÑ€ ÑÑ‚Ð°Ð¶Ð°: "; cin >> n;
 	elevator(n);
 }
