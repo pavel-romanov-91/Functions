@@ -14,8 +14,8 @@ void main()
 	const int n = 5;
 	int arr[n];
 	Fillrand(arr, n, 5, 100);
-	Sort(arr, n);
 	Print(arr, n);
+	Sort(arr, n);
 	cout << "Сумма элементов массива: " << Sum(arr, n) << endl;
 	cout << "Среднее арифметическое элементов массива: " << Avg(arr, n) << endl;
 	cout << "Минимальное значение из массива: " << minValueIn(arr, n) << endl;
