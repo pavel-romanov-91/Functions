@@ -1,4 +1,14 @@
-﻿#include<iostream>
+﻿
+
+template<typename T> void Fillrand(T brr[], const int m, int minRand, int maxRand)
+{
+	for (int i = 0; i < m; i++)
+	{
+		arr[i] = rand() % (maxRand - minRand) + minRand;
+	}
+}
+
+#include<iostream>
 using namespace std;
 
 #define tab "\t"
@@ -8,9 +18,9 @@ using namespace std;
 const int ROWS = 3;
 const int COLS = 4;
 
-
-void Fillrand(int arr[], const int n, int minRand = 0, int maxRand = 100);
-void Fillrand(double arr[], const int n, int minRand = 0, int maxRand = 100);
+ 
+template<typename T> void Fillrand(T arr[], const int n, int minRand = 0, int maxRand = 100);
+template<typename T> void Fillrand(double arr[], const int n, int minRand = 0, int maxRand = 100);
 void Fillrand(int arr[ROWS][COLS], const int ROWS, const int COLS, int minRand = 0, int maxRand = 100);
 void Fillrand(double arr[ROWS][COLS], const int ROWS, const int COLS, int minRand = 0, int maxRand = 100);
 
@@ -133,14 +143,14 @@ void main()
 
 }
 
-void Fillrand(int arr[], const int n, int minRand, int maxRand)
+template<typename T> void Fillrand(T arr[], const int n, int minRand, int maxRand)
 {
 	for (int i = 0; i < n; i++)
 	{
 		arr[i] = rand() % (maxRand - minRand) + minRand;
 	}
 }
-void Fillrand(double arr[], const int n, int minRand, int maxRand)
+template<typename T> void Fillrand(double arr[], const int n, int minRand, int maxRand)
 {
 	for (int i = 0; i < n; i++)
 	{
