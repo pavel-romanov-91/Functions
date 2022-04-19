@@ -12,6 +12,7 @@ void elevator(int floor)
 	elevator(floor-1);
 	cout << "Вы на " << floor << "этаже\n ";
 }
+//#define ELEVATOR
 
 double power(double base, int exponent)
 {
@@ -22,15 +23,20 @@ double power(double base, int exponent)
 	return exponent == 0 ? 1 : exponent > 0 ? base * power(base, exponent - 1) : 1 / power(base, -exponent);
 }
 
+
+
 void main()
 {
 	setlocale(LC_ALL, "");
-	//cout << "Hello World!";
-	//main();
 
-	/*int n;
+#ifdef ELEVATOR
+	cout << "Hello World!";
+	main();
+
+	int n;
 	cout << "Введите номер этажа: "; cin >> n;
-	elevator(n);*/
+	elevator(n);
+#endif // ELEVATOR
 
 	int number; 
 	int degree;
