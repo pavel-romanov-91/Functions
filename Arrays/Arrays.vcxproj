@@ -140,9 +140,19 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Arrays.cpp" />
+    <ClCompile Include="Fillrand.cpp" />
+    <ClCompile Include="Fillrand_double.cpp" />
+    <ClCompile Include="Print.cpp" />
+    <ClCompile Include="Shift.cpp" />
+    <ClCompile Include="Statistics.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Constanst.h" />
     <ClInclude Include="Fillrand.h" />
+    <ClInclude Include="Print.h" />
+    <ClInclude Include="Shift.h" />
+    <ClInclude Include="Statistics.h" />
+    <ClInclude Include="stdajx.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
